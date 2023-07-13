@@ -4,7 +4,7 @@ import viteLogo from '/vite.svg'
 import './App.css'
 import './components/Projects/card-skeleton.css';
 import './components/Projects/card.css';
-import './components/TuringMachine/AnimationHandler.tsx'
+import TuringMachineAnimationHandler from './components/TuringMachine/Handler.tsx'
 import './components/TuringMachine/style.css';
 import getProjects from './http.tsx';
 
@@ -112,63 +112,20 @@ function App() {
       </header>
 
       <section id="home">
-        <h1>Gonzalo Agüero</h1>
-        <h2>Full Stack Developer</h2>
+        <h1>Hello,<br></br>I'm a Software Developer</h1>
         <div id="solar-system">
           <span className="spherical-body sun"><span className="center"></span></span>
           <span className="spherical-body planet" id="planet1"></span>
           <span className="spherical-body planet" id="planet2"></span>
           <span className="spherical-body planet" id="planet3"></span>
         </div>
-        <div id="turing-machine-container">
-          <div className="turing-machine">
-            <div className="tape">
-              <div className="head">
-                <div className="_1"></div>
-                <div className="_2"></div>
-              </div>
-              <div className="tape-content">
-                <span>B</span>
-                <span>B</span>
-                <span>B</span>
-                <span>B</span>
-                <span>B</span>
-                <span>B</span>
-                <span>B</span>
-                <span>B</span>
-                <span>B</span>
-                <span>0</span>
-                <span>1</span>
-                <span>1</span>
-                <span>1</span>
-                <span>0</span>
-                <span>1</span>
-                <span>0</span>
-                <span>0</span>
-                <span>1</span>
-                <span>1</span>
-                <span>X</span>
-                <span>1</span>
-                <span>0</span>
-                <span>0</span>
-                <span>1</span>
-                <span>1</span>
-                <span>1</span>
-                <span>1</span>
-                <span>0</span>
-                <span>1</span>
-                <span>0</span>
-                <span>B</span>
-                <span>B</span>
-                <span>B</span>
-                <span>B</span>
-                <span>B</span>
-                <span>B</span>
-                <span>B</span>
-                <span>B</span>
-                <span>B</span>
-              </div>
+        <div id="turing-machine-container" className="turing-machine">
+          <div className="tape">
+            <div className="head">
+              <div className="_1"></div>
+              <div className="_2"></div>
             </div>
+            <div className="tape-content"></div>
           </div>
         </div>
       </section>

@@ -21,6 +21,10 @@ body {
   padding: 0;
   background-color: var(--dark-bg-2);
   position: relative;
+  background-image: url('./images/background.jpg');
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-attachment: fixed;
 }
 #root{
   position: relative;
@@ -54,13 +58,16 @@ nav ul li a {
 /* Home Section */
 #home {
   position: relative;
-  background-image: url('background.jpg');
   background-size: cover;
   background-color: rgba(0,0,0, 0.25);
   color: var(--light-1);
   text-align: center;
-  padding: 100px 20px;
-  /* min-height: 60vh; */
+  padding: 50px 0px;
+  min-height: 80vh;
+  display:flex;
+  flex-flow: column;
+  align-items: center;
+  justify-content: center;
 }
 #home h1{
   font-weight: 100;
