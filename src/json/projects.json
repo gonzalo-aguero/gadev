@@ -1,0 +1,37 @@
+[
+    {
+        "id": 5,
+        "title": "RH Renová tu hogar",
+        "description": "E-Commerce para empresa dedicada a la venta de cerámicos, revestimientos, porcelanatos y productos similares.\nRealizado para cliente.",
+        "image": "./images/rhrenovatuhogar.jpeg",
+        "link": "https://rhrenovatuhogar.com/"
+    },
+    {
+        "id": 4,
+        "title": "Anubis Insumos",
+        "description": "E-Commerce para empresa dedicada a la venta de artículos para artesanos.\nRealizado para cliente.",
+        "image": "./images/anubisinsumos.png",
+        "link": ""
+    },
+    {
+        "id": 3,
+        "title": "Cabañas Postales del Sauce",
+        "description": "Sitio web de reserva para alquiler de cabaña o quinta.\nRealizado para cliente.",
+        "image": "./images/cabanaspostales.jpeg",
+        "link": "http://gprojects.epizy.com/cabanas/"
+    },
+    {
+        "id": 2,
+        "title": "BSK Elevadores",
+        "description": "Sitio web para empresa de ascensores.\nRealizado para cliente.",
+        "image": "./images/bskelevadores.png",
+        "link": "http://gprojects.epizy.com/bskelevadores/"
+    },
+    {
+        "id": 1,
+        "title": "BGA Transporte",
+        "description": "Sitio web para empresa de transporte.\nRealizado para cliente.",
+        "image": "./images/bgatransporte.png",
+        "link": "http://gprojects.epizy.com/bgatransporte/"
+    }
+]
