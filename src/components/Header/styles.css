@@ -1,0 +1,21 @@
+header {
+    background-color: var(--dark-bg-1);
+    color: #fff;
+    padding: 20px;
+  }
+  
+  nav ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+  }
+  
+  nav ul li {
+    display: inline;
+  }
+  
+  nav ul li a {
+    color: #fff;
+    padding: 10px;
+    text-decoration: none;
+  }

@@ -1,0 +1,24 @@
+#about {
+    background-color: var(--dark-bg-3);
+    position: relative;
+
+    & .text {
+        position: relative;
+        z-index: 1;
+        padding: 2.5em;
+        color: var(--light-1);
+        padding-bottom: 0;
+    }
+
+    & p {
+        color: var(--light-3);
+    }
+
+    min-height: 30em;
+}
+
+@media (max-width: 768px) {
+    #about {
+        padding: 30px;
+    }
+}

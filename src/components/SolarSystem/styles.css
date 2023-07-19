@@ -1,0 +1,101 @@
+#solar-system {
+    position: fixed;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.8);
+    padding: 10px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 30px;
+    z-index: -2;
+}
+
+#solar-system .spherical-body {
+    border-radius: 50%;
+}
+
+#solar-system>.sun {
+    position: absolute;
+    background-color: rgb(255, 218, 98);
+    box-shadow: 0px 0px 50px 0px rgb(255, 114, 13);
+    left: calc(50% - 10em / 2);
+    top: calc(50% - 10em / 2);
+    width: 10em;
+    height: 10em;
+    animation: pulsecolor 5s infinite alternate;
+}
+
+.sun>.center {
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    box-shadow: 0px 0px 1000px 100px rgb(255, 172, 113);
+}
+
+#solar-system>.planet {
+    position: absolute;
+    background-color: rgb(5, 5, 5);
+    top: calc(50% - 2.5em / 2);
+    width: var(--radio);
+    height: var(--radio);
+    box-shadow: 0em 0em 1.67em 0.33em black;
+    transform-origin: calc(6 * var(--radio)) 0em;
+}
+
+#planet1 {
+    --radio: 1.5em;
+    animation: orbit1 12s ease-in-out infinite alternate;
+}
+
+#planet2 {
+    --radio: 2.5em;
+    animation: orbit2 20s ease-in-out infinite alternate;
+}
+
+#planet3 {
+    --radio: 3.5em;
+    animation: orbit3 28s ease-in-out infinite alternate;
+}
+
+@keyframes orbit1 {
+    from {
+        left: calc(50% + 8em * 1);
+    }
+
+    to {
+        left: calc(50% - 12em * 1);
+    }
+}
+
+@keyframes orbit2 {
+    from {
+        left: calc(50% + 8em * 1.67);
+    }
+
+    to {
+        left: calc(50% - 12em * 1.67);
+    }
+}
+
+@keyframes orbit3 {
+    from {
+        left: calc(50% + 8em * 2.33);
+    }
+
+    to {
+        left: calc(50% - 12em * 2.33);
+    }
+}
+
+@keyframes pulsecolor {
+    from {
+        background-color: rgb(242, 204, 79);
+    }
+
+    to {
+        background-color: rgb(255, 218, 98);
+    }
+}
