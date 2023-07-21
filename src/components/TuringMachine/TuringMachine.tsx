@@ -5,7 +5,7 @@ export default function TuringMachine() {
   const LEFT = 'left';
   const RIGHT = 'right';
   const NUMBER_OF_CELLS = 100;
-  const INTERVAL_TIME = 500;
+  const INTERVAL_TIME = 1500;
   const INPUT = "CODEISLOVE<3";
   const OUTPUT = "CODE=GONZALO";
 
@@ -37,6 +37,7 @@ export default function TuringMachine() {
         if (!running) restart();
       });
     } else symbolWidth = 0;
+
     currentPosition = 0;
     inputPosition = -1;
     running = true;
@@ -44,18 +45,28 @@ export default function TuringMachine() {
     interval = setInterval(moveTapeLogically, INTERVAL_TIME);
   }, []);
 
-
-  const restart = () => {
+  const restart = ()=>{
     stop();
+    reset();
+  }
+  const reset = () => {
     if (tapeContent.current) {
       tapeContent.current.style.cursor = "default";
       headComponents.forEach(el => el.style.cursor = "default");
+      
+      //Eliminar celdas
+      Array.from(tapeContent.current.children).forEach( child => {
+        if(tapeContent.current) tapeContent.current.removeChild(child);
+      });
     }
+    generateTape();
+
     currentPosition = 0;
     inputPosition = -1;
     running = true;
     setTapeAt((NUMBER_OF_CELLS / 2) - 1);
     interval = setInterval(moveTapeLogically, INTERVAL_TIME);
+    
   }
   const generateTape = () => {
     if (tapeContent.current) {
@@ -109,8 +120,12 @@ export default function TuringMachine() {
       let direction, symbolToInsert;
 
       if (inputPosition >= INPUT.length) {
-        if (symbol === "=") stop();
-        else {
+        if (symbol === "="){
+          stop();
+          setTimeout(() => {
+            reset();
+          }, 2000);
+        }else {
           direction = LEFT;
           moveTape(direction);
         }

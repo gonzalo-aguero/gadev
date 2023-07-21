@@ -5,7 +5,7 @@ export default function About() {
         <>
             <section id="about">
                 <div className="text">
-                    <h2>About Me</h2>
+                    <h2 className="font-sans text-2xl mb-4">About Me</h2>
                     <p>Add some information about yourself here.</p>
                     <p>Here you must to write about you, your personality, your career as professional, etc.</p>
                 </div>

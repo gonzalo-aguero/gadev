@@ -1,3 +1,7 @@
+/* Global Styles */
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
 :root {
   --dark-bg-1: #333;
   --dark-bg-2: #242424;
@@ -9,8 +13,10 @@
   --blue-2: #363696;
   --blue-3: #2d2d83;
 }
+.text-shadow-1{
+	text-shadow: 4px 4px 5px rgba(0,0,0,0.25);
+}
 
-/* Global Styles */
 * {
   box-sizing: border-box;
   scroll-behavior: smooth;

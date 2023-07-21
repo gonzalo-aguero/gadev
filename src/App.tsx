@@ -2,11 +2,12 @@ import { useState } from 'react'
 import reactLogo from './assets/react.svg'
 import viteLogo from '/vite.svg'
 
-import './App.css'
+import './App.css';
 import Home from './components/Home/Home.tsx';
 import SolarSystem from './components/SolarSystem/SolarSystem.tsx';
 import Header from './components/Header/Header.tsx';
 import About from './components/About/About.tsx';
+import Portfolio from './components/Portfolio/Portfolio.tsx';
 
 // function moveCard(event: MouseEvent, card: HTMLElement): void {
 // 	const cardRect = card.getBoundingClientRect();
@@ -68,6 +69,7 @@ function App() {
 			<Home></Home>
 			<SolarSystem></SolarSystem>
 			<About></About>
+			<Portfolio></Portfolio>
 			{/* <section id="contact">
         <h2>Contact Me</h2>
         <form onsubmit="return validateForm()">
