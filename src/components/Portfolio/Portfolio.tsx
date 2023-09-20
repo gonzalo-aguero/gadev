@@ -45,7 +45,7 @@ export default function Portfolio() {
                         <div className="project-details">
                             <h3>{project.title}</h3>
                             <p>{project.description}</p>
-                            <a href={project.link} className="btn">View Details</a>
+                            <a href={project.link} target="_blank" className="btn">Ver</a>
                         </div>
                     </div>
                 );
@@ -69,7 +69,7 @@ export default function Portfolio() {
     return (
         <>
             <section id="portfolio">
-                <h2 className="font-sans text-2xl mb-4">Portfolio</h2>
+                <h2 className="font-sans text-2xl mb-4">Proyectos</h2>
                 <div className="portfolio-items" id="project-container" ref={projectsContainer}>
                     {renderProjects(projects)}
                 </div>

@@ -1,3 +1,5 @@
+import { createLogger } from 'vite';
+
 /** @type {import('tailwindcss').Config} */
 export default {
   content: [

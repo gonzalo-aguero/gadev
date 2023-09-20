@@ -49,6 +49,11 @@ body {
   z-index: -1;
 }
 
+p{
+  margin-bottom: .8em;
+  line-height: 1.25em;
+}
+
 /* Contact Section */
 #contact {
   background-color: var(--dark-bg-3);
@@ -78,6 +83,8 @@ footer {
   padding: 20px;
   text-align: center;
 }
+
+
 
 /* Media Queries for Responsive Design */
 @media (max-width: 768px) {

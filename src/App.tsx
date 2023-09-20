@@ -1,7 +1,8 @@
-import { useState } from 'react'
-import reactLogo from './assets/react.svg'
-import viteLogo from '/vite.svg'
+// import { useState } from 'react'
+// import reactLogo from './assets/react.svg'
+// import viteLogo from '/vite.svg'
 
+import './index.css'
 import './App.css';
 import Home from './components/Home/Home.tsx';
 import SolarSystem from './components/SolarSystem/SolarSystem.tsx';
@@ -36,15 +37,6 @@ import Portfolio from './components/Portfolio/Portfolio.tsx';
 // 	card.style.transform = 'perspective(1000px) rotateX(0deg) rotateY(0deg)';
 // }
 
-
-function validateForm() {
-	var checkbox = document.getElementById("bot-check") as HTMLFormElement;
-	if (checkbox.checked) {
-		return false; // Detener el envío del formulario
-	}
-	// Si el checkbox no está marcado, el formulario puede enviarse
-	return true;
-}
 
 
 // Obtén los elementos que deseas observar
